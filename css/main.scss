@@ -115,6 +115,7 @@ header{
         background: $maincolor;
         transition: 0.2s ease-in-out;
         overflow: hidden;
+        z-index: 1;
     
     }
     
@@ -275,6 +276,43 @@ body{
 /*
   BIO PAGE 
 */
+
+.sandGap{
+    margin-top: 3vh;
+    border-bottom: solid 2px #CFCFCF;
+    margin-bottom: 3vh;
+}
+
+.sandGap h2{
+    font-size: 40px;
+    font-weight:500;
+    max-width: 100%;
+    color: $maincolor;
+}
+
+.sandGap p{
+    color: $secondarycolor;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 27px;
+    
+}
+
+.sandBox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sandBox img{
+    width: 32%;
+    height:auto;
+    margin-bottom: 2rem;
+}
+
+
 .elementBio h2{
     color: $maincolor;
     padding-left: 1px;
@@ -846,7 +884,11 @@ a.content__text-link[data-fx="2"]:hover::after{
     .footer-bar{
         display: block; 
         
-    }  
+    } 
+    
+    .sandBox{
+        display: block;
+    }
     
 }
 

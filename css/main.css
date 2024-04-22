@@ -109,6 +109,7 @@ header {
     -webkit-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     overflow: hidden;
+    z-index: 1;
   }
   .nav-bar.active {
     height: 280px;
@@ -252,6 +253,50 @@ body {
 /*
   BIO PAGE 
 */
+.sandGap {
+  margin-top: 3vh;
+  border-bottom: solid 2px #CFCFCF;
+  margin-bottom: 3vh;
+}
+
+.sandGap h2 {
+  font-size: 40px;
+  font-weight: 500;
+  max-width: 100%;
+  color: #086C2A;
+}
+
+.sandGap p {
+  color: #272727;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 27px;
+}
+
+.sandBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sandBox img {
+  width: 32%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
 .elementBio h2 {
   color: #086C2A;
   padding-left: 1px;
@@ -889,6 +934,9 @@ a.content__text-link[data-fx="2"]:hover::after {
     -ms-grid-column: 1;
   }
   .footer-bar {
+    display: block;
+  }
+  .sandBox {
     display: block;
   }
 }
