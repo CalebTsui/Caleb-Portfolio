@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IAT339-P03</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="normalize">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    
+    </head>
+    
+    <header>
+        <div><h3><a class="homeNav" href="index.html">Caleb Tsui</a></h3></div>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <h4><a href="index.html" class="active">Works</a></h4> 
+                </li>
+                
+                <li>
+                    <h4><a href="styleGuide.html" class="active">Style Guides</a></h4> 
+                </li>
+                
+                <li>
+                    <h4><a href="bio.html" class="active">About</a></h4>
+                </li>
+                
+                <li>
+                    <h4><a href="https://drive.google.com/file/d/1tKYmLepLIXsuTlH_N9Q9GVMyMHphQJDn/view?usp=sharing" class="active">Resumé</a></h4>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <script>
+        console.log("JavaScript for Hamburger menu is running.");
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            
+            navBar = document.querySelector(".nav-bar"); 
+            navBar.classList.toggle("active");
+
+        }
+    </script>
+    
+    <body>
+        <div class="cursor"></div>
+        <section class="elementBio2">
+            <div> 
+                <img class="processImg" src="img/cover.jpg" alt="Cover image for the Eunoia Hackathon">
+            
+            </div>
+            <div class="title">
+                <h2>EUNOIA UX HACKATHON - CALTEC SOLUTIONS REBRAND</h2>
+                <h3>Strategize to streamline the flow and user experience of the website</h3>
+            </div>
+            
+            <div class="grid two-column add-gutters">
+                <div>
+                    <h2>Overview</h2>
+                </div>
+                
+                <div> 
+                    <p>The project was created for an intensive UX Design hackathon hosted by Eunoia. Within an One-week period, UX research evolved into interaction design through the analysis of precedents that were guided by the design qualities and principles. This all culminated into a website redesign with purposeful content design.</p>
+                    <p class="boldText">Contributions:</p>
+                    <p>Content Design, User Research, UX Design</p>
+                    <p class="boldText">Team:</p>
+                    <p>Kelly Hady, Priscilla Cho, Joseph Lee</p>
+                    <p class="boldText">Duration:</p>
+                    <p>Summer 2023, 5-day Hackathon Project</p>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <section class="element2">
+            <div>
+                <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>Video Walkthrough</h2>
+                    </div>
+                    
+                    <div class="column">
+                        <video class="vidImg" controls><source src="img/walkthrough.mov" type="video/mp4"><source src="img/walkthrough.mov" type="video/mov" alt="video walkthrough of the Euonia Hackathon Project">Your browser does not support the video tag.</video>
+                        
+                    </div>
+                </div>
+                
+                <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>About the Client</h2>
+                    </div>
+                    
+                    <div class="column">
+                        <p>Caltec Solutions is an IT business support company working at the enterprise level with experience at a high-tech Fortune500 level of IT management. Caltec Solutions provides tech support, antivirus, conduct data backups and computer maintenance. </p>
+                    </div>
+                </div>
+                
+                 <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>Heuristic Evaluation  </h2>
+                    </div>
+        
+                    <div class="column">
+                        <img class="processImg" src="img/heuristicIMG.jpg" alt="Heuristic Evaluation">
+                        <p>To assess the usability of the client’s website, each team member performed a heuristic evaluation of Caltec’s current website. The evaluation aimed to identify usability issues based on Nielsen's heuristic principles and categorize them by severity rating to determine which item to prioritize. Afterward, as a team, we evaluated the extent of experience challenges. Above is the heuristic evaluation I conducted.</p>
+
+                    </div>
+                </div>               
+                
+                <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>Affinity Mapping</h2>
+                    </div>
+        
+                    <div class="column">
+                        <img class="processImg" src="img/affinitymapping.jpg" alt="Affinity Mapping">
+                        <p>Using the conclusions we drew from the heuristic evaluation and the team discussion session, we created an Affinity Map to gather qualitative information about the client’s website and to better to plan potential solutions for our clients.By conducting usability testing and making observations of the website, we categorized the users’ needs and challenges into sticky notes to generate ideas for potential solutions.</p>
+                        <p>Through this process, we prioritized certain points of action and found that the website’s page flow and cognitive overload were key usability constraints.</p>
+                    </div>
+                </div>
+                
+                <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>Defining the Problems</h2>
+                    </div>
+        
+                    <div class="column">
+                        <p class="boldText">Confusing Information Architecture and Content</p>
+                        <p>After meeting with our client, we determined that the first problem was the information architecture and content of the website, highlighted by user complaints about unfamiliar functions, cognitive overload, and confusing information hierarchy.</p>
+                        
+                        <p class="boldText">Visual Design to support company’s identity</p>
+                        <p>The second problem was the website’s design. Caltec’s brand identity relies heavily on visual design to convey a sense of professionalism, the client expressed the desire for a more professional and user-friendly website.</p>
+                        
+                        <p class="boldText">Unclear Interface Design</p>
+                        <p>The last problem was the confusing call-to-action interfaces. The website featured symbols resembling buttons that merely served as visual elements or inconspicuous buttons that direct users to important information.</p>
+                        
+                    </div>
+                </div>
+                
+                <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>User Persona to Contextual Challenges</h2>
+                    </div>
+                    
+                    <div class="column"> 
+                        <img class="processImg" src="img/userPersona.jpg" alt="User Persona">
+                        <p>To better contextualize the the user challenges of the client’s website, I developed a user persona. This involved interviewing the client to ascertain their objectives and conducting research on the technical services frequently required by medium-sized companies, the primary target audience. The accompanying diagram visually encapsulates the demographic insights derived from this process.</p>
+                    </div>
+                </div>
+                
+                <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>Restructuring the Information Architecture</h2>
+                    </div>
+                    
+                    <div class="column"> 
+                        <img class="processImg" src="img/infoOne.jpg" alt="Information Architecture before">
+                        <img class="processImg" src="img/infoTwo.jpg" alt="Information Architecture refined">
+                        <p>To organize the structure information in a clear way, we mapped the website’s original information architecture and used our previous heuristics evaluation to pinpoint areas of cognitive overload and conflicting information hierarchy. From there, I re-routed the page flow of the website and re-wrote the contents of each page to simplify the information.</p>
+                    </div>
+                </div>
+                
+                <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>Rebrand Strategy</h2>
+                    </div>
+                    
+                    <div class="column">
+                        <p class="boldText">Strategies to Tackling the Issues</p>
+                        <p>Our strategies involve overhauling the brand and colour language, typography, and information architecture to create a visually appealing website that communicates the brand's values effectively while providing an intuitive and seamless user experience.</p>
+                        
+                        <p class="boldText">Restructure the Website Architecture</p>
+                        <p>By restricting the website’s architecture and re-organizing the content, this strategy reduces cognitive overload, providing a better experience navigating around the website and learning about the company’s provided services.</p>
+                        
+                        <p class="boldText">The Impact of the Website Redesign</p>
+                        <p>By creating a professional image, the website can enhance the credibility of a business and inspire confidence among its target audience. An user-friendly website can significantly improve the overall user experience and reinforce a brand's reputation.</p>
+                        
+                    </div>
+                </div>
+                
+                <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>Improving the User Journey</h2>
+                    </div>
+                    
+                    <div class="column">
+                        <img class="processImg" src="img/userOne.jpg" alt="User journey before rebranding">
+                        <p>The secondary UX solution involves a user journey, used in conjunction with the user persona. The slope on the graph represents trends in emotion. As an example, there is a note on specific user frustration with the lack of a help desk or FAQ page. I divided the journey map into four sections, first defined by a user scenario on the site to find a solution to IT-related problems.</p>
+                        
+                        <img class="processImg" src="img/userTwo.jpg" alt="User journey after rebranding">
+                        <p>After redesigning the website, I crafted a user journey for post-redesign to visualize the potential user flow and their emotions in a specific scenario. The discovering and onboarding stage remain the same, but the slope curves upwards at the executing stage thanks to the implementation of a FAQ page and refinement of a contact page.</p>
+   
+                    </div>
+                </div>
+                
+                <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>Website Redesign</h2>
+                    </div>
+                    
+                    <div class="column">
+                        <p class="boldText">New Colour Palette to Represent Company’s identity</p>
+                        <p>To enhance the professional appearance of the design, blue was selected for its trustworthy qualities, which are integral in establishing a credible and reputable image. Additionally, the use of coral orange conveys a sense of friendliness, contributing to the creation of a positive atmosphere for businesses.</p>
+                        
+                        <p class="boldText">New Font for Improved Readability</p>
+                        <p>For font pairings, Satoshi was chosen as the primary header due to its alignment with the brand's identity and paired with Avenir for its legibility, making it an ideal choice for displaying dense information on digital screens. The font's accessibility also ensures a budget-friendly solution without compromising on quality.</p>
+                        
+                        <p class="boldText">Consistent Symbols and illustrations</p>
+                        <p>The team opted for a softer illustration style for the website and imagery that matches technology and IT support themes as a supportive element throughout our web pages. I curated a gallery of illustrations that lends the website to the brand’s personable image.</p>
+                        
+                        <p class="boldText">New Iteration of Design Direction and Pages</p>
+                        <p>In response to the client's desire for a website redesign, our team created a new design direction, opting for a more minimalist aesthetic. Upon finalizing the new artistic direction, we  a mockup for the redesigned website. My specific contributions focused on rewriting content, designing the FAQ and Resources pages, sourcing the illustrations, and redesigning logos to align with the client's vision.</p>
+   
+                    </div>
+                </div>
+                
+                <div class="grid two-column add-gutters">
+                    <div>
+                        <h2>Lesson Learned</h2>
+                    </div>
+                    
+                    <div class="column">
+                        <img class="processImg" src="img/team.jpg" alt="Euonia Hackathon team photo">
+                        
+                        <p class="boldText">Effective Time Management</p>
+                        <p>Managing both a hackathon project and final exams posed a significant challenge due to overlapping timelines. To address this, I devised a schedule to effectively allocate my time between project work and exam preparation. Open communication with my teammates about my academic commitments fostered understanding and allowed us to plan accordingly. This experience strengthened my skills in task balancing and reinforced the importance of effective time management in demanding situations.</p>
+                        
+                        <p class="boldText">How to Identify UX Problem</p>
+                        <p>Participating in this hackathon provided me with a valuable lesson in problem framing, considering both user perspectives and business needs. As my first opportunity to apply UX knowledge in a real-life context, I conducted client interviews to understand their objectives,  conducted extensive research to identify opportunities, and collaborated with stakeholders to design sprint a website mockup. This experience highlighted how diverse backgrounds contribute to project initiation and execution in the workforce, providing valuable insights into real-world application of UX principles.</p>
+   
+                    </div>
+                </div>
+                
+
+            </div>
+        
+        </section>
+        <script src="js/charming.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/fonteffect.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/cursor.js"></script>
+        
+    </body>
+    
+    <footer> 
+        <div class="footerFlex">
+            <div class="selectedWork">
+                <div class="footerType">
+                    <h2>Thanks for dropping by and have a <span class="h2Serif">nice</span> day :-D</h2>
+                
+                </div>
+        
+            <div class="footer-bar">
+                <div class="footer-menu">
+                    <h4><a class="footerLink" href=mailto:cst12@sfu.ca>Let's Talk</a></h4>
+                    <h4><a class="footerLink" href="https://www.linkedin.com/in/caleb-tsui/">Let's Connect</a></h4>
+                    <h4><a class="footerLink" href="https://drive.google.com/file/d/1tKYmLepLIXsuTlH_N9Q9GVMyMHphQJDn/view?usp=sharing">Here's my Resumé</a></h4>
+                    <h4><a class="footerLink" href="citation.html">Citation</a></h4>
+                </div>  
+                <h4>© Caleb Tsui 2024</h4>
+                
+            </div>
+
+
+            </div>
+        </div>
+    
+    </footer>
+
+</html>
