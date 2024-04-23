@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+    
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IAT339-P03</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="normalize">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+    
+    </head>
+    
+    <header>
+        <div><h3><a class="homeNav" href="index.html">Caleb Tsui</a></h3></div>
+        
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <h4><a href="#works" class="active">Projects</a></h4> 
+                </li>
+                
+                <li>
+                    <h4><a href="sandbox.html" class="active">Sandbox</a></h4> 
+                </li>
+                
+                <li>
+                    <h4><a href="bio.html" class="active">About</a></h4>
+                </li>
+                
+                <li>
+                    <h4><a href="https://drive.google.com/file/d/1tKYmLepLIXsuTlH_N9Q9GVMyMHphQJDn/view?usp=sharing" class="active">Resumé</a></h4>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <script>
+        console.log("JavaScript for Hamburger menu is running.");
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function(){
+            
+            navBar = document.querySelector(".nav-bar"); 
+            navBar.classList.toggle("active");
+
+        }
+    </script>
+    
+    <body>
+        <div class="cursor"></div>
+        
+        <section class="elementBio2">
+            <div> 
+                <img class="processImg" src="img/cover.jpg" alt="Cover image for the Eunoia Hackathon">
+            
+            </div>
+            <div class="title">
+                <h2>88RISING MICROSITE CASE STUDY (SPECULATIVE)</h2>
+                <h3>Strategize solutions to streamline the flow and user experience of the website</h3>
+            </div>
+            
+            <div class="grid two-column add-gutters">
+                <div>
+                    <h2>Overview</h2>
+                </div>
+                
+                <div> 
+                    <p>The five-week academic project was centred around streamlining the flow of the booking process of 88Rising artists for third-party booking agents. This all culminated in a microsite (desktop and mobile), which illustrated the team’s proposed solutions and insightful user experience choice. *This project is not affiliated with 88Rising. It is a case study done for an academic project.*</p>
+                    <p class="boldText">Contributions:</p>
+                    <p>Content Design, User Research, UX Design, Prototype, Visual Design</p>
+                    <p class="boldText">Team:</p>
+                    <p>Joseph Lee, Michelle Lee, Katelyn Tra, Yasamin Ketabchi</p>
+                    <p class="boldText">Duration:</p>
+                    <p>Summer 2022, 5-Weeks Academic Project</p>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <script src="js/charming.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/fonteffect.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/cursor.js"></script>
+    </body>
+    
+    <footer> 
+        <div class="footerFlex">
+            <div class="selectedWork">
+                <div class="footerType">
+                    <h2>Thanks for dropping by and have a <span class="h2Serif">nice</span> day :-D</h2>
+                
+                </div>
+        
+            <div class="footer-bar">
+                <div class="footer-menu">
+                    <h4><a class="footerLink" href=mailto:cst12@sfu.ca>Let's Talk</a></h4>
+                    <h4><a class="footerLink" href="https://www.linkedin.com/in/caleb-tsui/">Let's Connect</a></h4>
+                    <h4><a class="footerLink" href="https://drive.google.com/file/d/1tKYmLepLIXsuTlH_N9Q9GVMyMHphQJDn/view?usp=sharing">Here's my Resumé</a></h4>
+                    <h4><a class="footerLink" href="citation.html">Citation</a></h4>
+                </div>  
+                <h4>© Caleb Tsui 2024</h4>
+                
+            </div>
+
+
+            </div>
+        </div>
+    
+    </footer>
+</html>
