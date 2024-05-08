@@ -4,8 +4,8 @@
 $maincolor: #086C2A;
 $secondarycolor: #272727;
 $maxwidth: 40rem;
-$thirdcolor: #FFFDFB;
-$borderone: solid 2px #086C2A;
+$thirdcolor: #FFFFFF;
+$borderone: solid 1px #086C2A;
 
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -55,7 +55,7 @@ header{
 }
 
 .homeNav{
-    color: #086C2A;
+    color: $maincolor;
     text-decoration: none;
 }
 
@@ -93,6 +93,7 @@ header{
 }
 
 @media only screen and (max-width: 40rem){
+    
     .hamburger{
         display:block; 
         cursor:pointer;
@@ -112,7 +113,7 @@ header{
         left: 0;
         right: 0;
         width: 100vw;
-        background: $maincolor;
+        background: $thirdcolor;
         transition: 0.2s ease-in-out;
         overflow: hidden;
         z-index: 1;
@@ -120,13 +121,15 @@ header{
     }
     
     .nav-bar.active{
-        height: 280px;
+        height: 100%;
         border-radius: 0px 0px 15px 15px;
         
     }
+    
+    .
 
     .nav-bar ul li a{
-        color: $thirdcolor;
+        color: $maincolor;
         margin-bottom: 12px;
         
     }
@@ -161,7 +164,7 @@ header{
 h1{
     margin-top: -1vw;
     margin-bottom: -1vw;
-    font-size: 55px;
+    font-size: 35px;
     color: $maincolor;
     font-family: "Switzer", sans-serif;
     font-weight: 400;
@@ -170,7 +173,7 @@ h1{
 .h1Serif{
     margin-top: -1vw;
     margin-bottom: -1vw;
-    font-size: 55px;
+    font-size: 40px;
     color: $maincolor;
     font-family: "DM-Serif-Text", serif;
     font-weight: 550;
@@ -201,6 +204,11 @@ h3{
     font-weight: 500;
 }
 
+.homePage h3{
+    color: $secondarycolor;
+    
+}
+
 
 h4{
     font-family: "Switzer", sans-serif;
@@ -225,9 +233,9 @@ header h4{
 */
 body{
     background: $thirdcolor;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-bottom: 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 3vw;
     font-family: "Switzer", sans-serif;
     font-weight: normal;
 }
@@ -240,7 +248,7 @@ body{
 }
 
 .homePage{
-    margin-top: 27vh;
+    margin-top: 30vh;
 }
 
 
@@ -257,12 +265,12 @@ body{
 
 .selectedWork {   
     margin-bottom: 2rem;
-    border-top: solid #CFCFCF; 
-    border-width: 2px; 
+    border-top: solid 2px $maincolor; 
 
 }
 
 .elementBio{
+    margin-top: 3vh;
     margin-bottom: 2rem;
     
 }
@@ -275,6 +283,45 @@ body{
 
 /*
   BIO PAGE 
+*/
+
+.bioPage{
+    margin-top: 30vh;
+}
+
+/*
+  BIO PAGE 
+*/
+.bioPage{
+  margin-top: 15vh;
+}
+
+.bioPage h1{
+  font-size: 30px;
+  max-width: 75%
+}
+
+.h2Temp {
+  margin-top: 1vw;
+  margin-bottom: -0.1vw;
+  font-size: 30px;
+  font-family: "DM-Serif-Text", serif;
+  font-weight: 550;
+  font-style: italic;
+  color: #086C2A;
+}
+
+.paraBio{
+  color: #272727;
+    
+}
+
+.paraGreen{
+  color: #086C2A;
+}
+
+/*
+  SANDBOX
 */
 
 .sandGap{
@@ -356,11 +403,11 @@ body{
   HOME PAGE
 */
 .homePage h1{
-    max-width: 70vw;
+    max-width: 70%;
 }
 
 .spaceDownOne{
-    margin-bottom: 6vh;
+    margin-bottom: 5vh;
 }
 
 .spaceDownTwo{
@@ -583,8 +630,8 @@ input[type=text]:focus, input[type=text]:hover{
 */
 
 figure {
-	max-width: 700px;
-    max-height: 400px;
+	max-width: 100%;
+    max-height: 100%;
 	margin: 0;
 	padding: 0;
 	background: $thirdcolor;
@@ -593,16 +640,18 @@ figure {
 
 .productItem{
     position: relative;
-    max-width: 700px;
+    max-width: 100%;
     height: auto;
     overflow: hidden;
     padding: 5px;
+    margin-top: 7vh;
 }
 
 .productItem img:hover{
     -webkit-transform: scale(1.2);
 	transform: scale(1.15);
     transition:.3s ease-in-out;
+    border: $borderone;
 }
 
 .productItem figure img {
@@ -656,6 +705,28 @@ figure {
     grid-template-columns: 1fr 2fr;
 	grid-template-rows: auto;
     grid-auto-flow: row;
+}
+
+.grid.two-home-column {
+    margin-top: -1rem;
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+    grid-auto-flow: row;
+}
+
+.rightAlign{
+    text-align: right;
+    justify-content: flex-end
+}
+
+.grid.two-home-column h2{
+    font-weight: 450;
+}
+
+.grid.two-home-column h3{
+    color: #A7A7A7;
+    font-weight: 450;
 }
 
 .grid p{
@@ -739,7 +810,7 @@ figure {
     justify-content: space-around;
     
 }
-
+/*
 .wrapperTemp img {
     overflow: hidden;
     max-height: $maxwidth; 
@@ -766,6 +837,8 @@ figure {
     border: solid 5px $maincolor;
 }
 
+*/
+
 .wrapperTemp h2{
     margin-top: 1vw;
     margin-bottom: -0.1vw;
@@ -773,17 +846,6 @@ figure {
     font-family: "Switzer", sans-serif;
     font-weight: 500;
     color: $secondarycolor;
-     
-}
-
-.h2Temp{
-    margin-top: 1vw;
-    margin-bottom: -0.1vw;
-    font-size:40px;
-    font-family: "DM-Serif-Text", serif;
-    font-weight: 550;
-    font-style: italic;
-    color: $maincolor;
      
 }
 
