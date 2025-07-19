@@ -147,7 +147,7 @@ header{
 }
 
 /*
-  FONT SIZE
+  FONT SIZE #086C2A
 */
 
 h1{
@@ -163,7 +163,7 @@ h1{
     margin-top: -1vw;
     margin-bottom: -1vw;
     font-size: 40px;
-    color: #086C2A;
+    color: #000000;
     font-family: "DM-Serif-Text", serif;
     font-weight: 550;
     font-style: italic;
